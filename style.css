@@ -1,0 +1,91 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: grey;
+	font-family: 'Nunito Sans', sans-serif;
+
+
+}
+.Container
+{
+	margin: 2% auto;
+	height: 550px;
+	width: 340px;
+	background: black;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+#result
+{
+	width: 300px;
+	height: 110px;
+	 
+	border-radius: 20px;
+	 
+	background: black;
+	 
+	 
+    margin: 10px 10px;
+    padding:5px 5px;
+    text-overflow: hidden;
+    transition: 0.1s;
+    
+}
+#result input
+{ 
+	border: none;
+	width: 300px;
+	background: black;
+	color:white;
+	font-size: 25px;
+    outline: none;
+    text-align: right;
+    margin-top: 25%;
+
+     
+    }
+span  
+{
+	display: grid;
+	height: 60px;
+	width: 60px;
+	color: #fff;
+ 	background:#505050;
+ 	margin: 10px;
+ 	float: left;
+ 	border-radius: 50%;
+ 	text-align: center;
+ 	align-items: center;
+ 	cursor: pointer;
+ 	font-weight: bold;
+ 	color: white;
+
+}
+span:active
+{
+	background:#C70039;
+	color: white;
+}
+#clear, #percentage, #backspace
+{
+	background: #bebebc;
+	color: black;
+}
+.num_divide,.num_multiply,.num_plus,.num_minus,.num_equal
+{
+	background: #FF9500;
+	font-size: 30px;
+}
+.num_zero
+{
+	width: 120px;
+	height: 60px;
+	text-align:left;
+	border-radius:300px;
+	padding-left: 22px;
+
+}

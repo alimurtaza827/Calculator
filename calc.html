@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+<
+</head>
+<body>
+<div class="Container">
+	<form class="calculator"  name="calc">
+		<div id="result"><input type="text"  id="txet"  name="txt"  readonly="" ></div>
+		<span  class="num"    id="clear" onclick="document.calc.txt.value =''">C</span>
+		<span   class="num"   id="backspace" onclick="remove();">CE</span>
+		<span   class="num"   id="percentage"onclick="document.calc.txt.value +='%'">%</span>
+		<span  class="num_divide"  id="c"        onclick="document.calc.txt.value +='/'">&#247;</span>
+		<span  class="num"    id="c"onclick="document.calc.txt.value +='7'">7</span>
+		<span  class="num"    id="c"onclick="document.calc.txt.value +='8'">8</span>
+		<span  class="num"    id="c"onclick="document.calc.txt.value +='9'">9</span>
+		<span  class="num_multiply"  id="c"onclick="document.calc.txt.value +='*'">&times</span>
+		<span class="num"     id="c"onclick="document.calc.txt.value +='4'">4</span>
+		<span class="num"     id="c"onclick="document.calc.txt.value +='5'">5</span>
+		<span class="num"     id="c"onclick="document.calc.txt.value +='6'">6</span>
+		<span class="num_plus"                id="c"onclick="document.calc.txt.value +='+'">+</span>
+		<span class="num"     id="c"onclick="document.calc.txt.value +='3'">3</span>
+		<span class="num"     id="c"onclick="document.calc.txt.value +='2'">2</span>
+		<span class="num"     id="c"onclick="document.calc.txt.value +='1'">1</span>
+		<span class="num_minus"                id="c"onclick="document.calc.txt.value +='-'">-</span>
+		<!--<span                 id="c"></span>-->
+		<span class="num_zero"     id="c"onclick="document.calc.txt.value +='0'">0</span>
+		<span                 id="c" onclick="document.calc.txt.value +='.'">.</span>
+		<span  class="num_equal"               id="c"onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+
+	</form>
+</div>
+
+ <script>
+	function remove(num)
+	{
+		var remove =  document.getElementById('txet').value;
+		document.getElementById('txet').value = remove.substring(0,remove.length -1);
+  
+	}
+</script>
+</body>
+</html>
